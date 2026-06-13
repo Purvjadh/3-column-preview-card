@@ -85,7 +85,7 @@ I used Claude (Anthropic) during this project:
 ## Author
 
 - Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- GitHub - [@yourusername](https://github.com/yourusername)
+- GitHub - [@yourusername](https://github.com/purvjadh)
 
 ## Acknowledgments
 
