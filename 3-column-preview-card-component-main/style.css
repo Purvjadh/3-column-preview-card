@@ -1,0 +1,198 @@
+:root{
+    /* colors */
+    --clr-bg-sedans: hsl(31, 77%, 52%);
+    --clr-bg-suvs:hsl(184, 100%, 22%);
+    --clr-bg-luxury: hsl(179, 100%, 13%);
+    --clr-text-para:hsla(0, 0%, 100%, 0.5);
+    --clr-text-gray: hsl(0, 0%, 95%);
+    /* font sizes */
+    --fs-body:15px;
+    /* font weights */
+    --fw-basic:400;
+    --fw-bold:700;
+    /* font family */
+    --ff-lexan-deca:"Lexend Deca", sans-serif;
+    --ff-big-shoulders:"Big Shoulders", sans-serif;
+
+}
+
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+*:not(dialog) {
+  margin: 0;
+}
+
+/* 6. Improve media defaults */
+img, picture, video, canvas, svg {
+  /* display: block; */
+  max-width: 100%;
+}
+
+/* 7. Inherit fonts for form controls */
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* 8. Avoid text overflows */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/* 9. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+body {
+  /* 4. Increase line-height */
+  line-height: 1.5;
+  /* 5. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+  max-width: 100vw;
+  min-height: 100dvh;
+  font-family:var(--ff-big-shoulders);
+  font-size: var(--fs-body);
+}
+
+main{
+    width:100%;
+    padding: 0.1rem 1rem; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.card{
+    width:90% ;
+    max-width: 900px;
+    display:flex;
+    flex-direction: column; 
+}
+
+section{
+    padding: 1.2em;
+    
+}
+
+.sedan{
+    background-color: var(--clr-bg-sedans);
+    border-radius: 5px 5px 0px 0px;
+}
+
+.suv{
+    background-color: var(--clr-bg-suvs);
+}
+
+.luxury{
+    background-color:var(--clr-bg-luxury);
+     border-radius: 0px 0px 5px 5px;
+}
+
+.card__title{
+    color: var(--clr-text-gray);
+    font-size:1.2em;
+    font-weight:var(--fw-basic);
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.card_description{
+    color:var(--clr-text-para);
+    font-family: var(--ff-lexan-deca);
+    font-size: 0.85rem;
+    font-weight: var(--fw-basic);
+    margin-bottom: 0.8em;
+}
+
+img{
+    width: 30px;
+    height: 20px;
+}
+
+.btn{
+    background-color:var(--clr-text-gray) ;
+    border-radius:20px;
+    border: none;
+    font-family: var(--ff-lexan-deca);
+    font-size: 0.85rem;
+    padding: 0.7em 1.8em;
+  
+}
+
+#sedan-btn{
+    color: var(--clr-bg-sedans);
+    
+}
+
+#suv-btn{
+    color:var(--clr-bg-suvs)
+}
+
+#luxury-btn{
+    color: var(--clr-bg-luxury);
+}
+
+@media (min-width:600px){
+
+    
+    .card{
+        display: flex;
+        flex-direction: row;
+        
+    }
+    .sedan {
+        border-radius:4px 0px 0px 4px ;
+    }
+    .luxury {
+         border-radius:0px 4px 4px 0px ;
+    }   
+    .card_description{
+        margin-bottom: 3.5em;
+    }    
+    .sedan,
+    .suv,
+    .luxury{
+        padding: 1.7em;
+    }
+    
+    .btn:hover{
+        cursor: pointer;
+        border: 1px solid var(--clr-text-gray);
+       
+    }
+
+    #sedan-btn:hover{
+        background-color: var(--clr-bg-sedans);
+         color: var(--clr-text-gray);
+    }
+
+    #suv-btn:hover{
+      background-color: var(--clr-bg-suvs);
+      color: var(--clr-text-gray);
+    }   
+
+    #luxury-btn:hover{
+        background-color: var(--clr-bg-luxury);
+         color: var(--clr-text-gray);
+    }
+
+
+}
+
+@media (max-width:600px){
+    main{
+        place-items: start center;
+        margin: 1em;
+    }
+}
+
+this is my css code okay? give me improved version which will work on all devices and tell me which all part you have improved?? in simple language
